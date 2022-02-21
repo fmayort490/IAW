@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej7</title>
+</head>
+<body>
+    <script>
+        // Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+
+        // a. La cantidad de valores negativos ingresados.
+        // b. La cantidad de valores positivos ingresados.
+        // c. La cantidad de múltiplos de 15.
+        // d. El valor acumulado de los números ingresados que son pares.
+
+
+        let cont1 = 0; // a
+        let cont2 = 0; // b
+        let cont3 = 0; // c
+        let suma = 0;  // d
+
+        function info (){
+
+            for (i=1;i<=10;i++) {
+                let num;
+                num=Number(prompt("Inserta un número: "));
+
+                if (num < 0){ 
+                    cont1=cont1 + 1;
+                    if (num % 15 == 0){
+                        cont3=cont3 + 1;
+                    }
+                }
+
+                else if (num > 0) {
+                    cont2=cont2 + 1;
+                    if (num % 15 == 0){
+                        cont3=cont3 + 1;
+                    }
+                }
+
+                if (num % 2 == 0) {
+                    suma = suma + num;
+                }
+            }
+            document.write("La cantidad de valores negativos es: " + cont1 + "<br>");
+            document.write("La cantidad de valores positivos es: " + cont2 + "<br>");
+            document.write("La cantidad de múltiplos de 15 es: " + cont3 + "<br>");
+            document.write("La valor acumulado de los números pares es: " + suma);
+
+        }
+
+        info();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej5</title>
+</head>
+<body>
+    <script>
+        // Realizar un programa que acumule (sume) valores ingresados por teclado hasta ingresa el 9999 
+        // (no sumar dicho valor, solamente indica que ha finalizado la carga).
+        // Imprimir el valor acumulado e informar si dicho valor es cero, mayor a cero o menor a cero.
+
+
+
+        let valor;
+        let suma = 0;
+        do {
+            valor = Number(prompt("Ingrese un valor (9999 para finalizar)"));
+            if (valor != 9999) {
+                suma = suma + valor;
+            }
+        } while (valor != 9999);
+        document.write("Suma total: " + suma);
+        document.write("<br>");
+        if (suma > 0) {
+            document.write("La suma es mayor a cero");
+        } else {
+            if (suma == 0) {
+                document.write("La suma es cero");
+            } else {
+                document.write("La suma es menor a cero");
+            }
+        }
+        
+        
+        
+        
+        
+
+
+
+    </script>
+</body>
+</html>

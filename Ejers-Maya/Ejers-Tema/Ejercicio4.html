@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericio4</title>
+</head>
+<body>
+    <script>
+        // Escribe un programa que coja los primeros 3 caracteres y los 3 últimos de una cadena dada, 
+        //los junte y los muestre.
+        // Si la longitud de la cadena es menor de 6, devolverá la cadena original.
+        let cadena = String(prompt("Introduzca una cadena de caracteres:"));
+
+        if (cadena.length < 6){ // La comprobación va fuera del IF. 
+
+            document.write (cadena); // La acción va dentro 
+           
+        }
+
+         else {
+            document.write (cadena.substring(0,3) + cadena.slice(-3));
+            
+
+         }
+
+    </script>
+</body>
+</html>

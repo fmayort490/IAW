@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+</head>
+<body>
+    <script>
+        class Cliente {
+            constructor (nombre,saldo) {
+            this.nombre=nombre;
+            this.saldo=saldo;
+            this.ingresar=ingresar;
+            this.retirar=retirar;
+            }
+            depositar(){
+                return this.ingresar + saldo;
+            }
+            extraer(){
+                return this.retirar - saldo;
+            }
+ 
+        }
+        let nombre= prompt ("Introduzca el nombre: ");
+        let saldo= Number(prompt ("Introduzca el saldo: "));
+        let ingresar= Number(prompt ("Introduzca el dinero a ingresar: "));
+        let retirar= Number(prompt ("Introduzca el dinero a retirar: "));
+        let saldoactual= saldo+ingresar-retirar;
+
+        const Maya=new Cliente (nombre,saldo,ingresar,retirar);
+        const Fran=new Cliente (nombre,saldo,ingresar,retirar);
+
+        // IMPRIMO ATRIBUTOS (no llevan paraéntesis)
+        document.write("El nombre del cliente es: " + Maya.nombre+"<br>");
+        document.write("El saldo del cliente es: " + Maya.saldo+"€"+"<br>");
+
+ 
+
+
+        //TRABAJO CON MÉTODOS (AREA ES FUNCION, POR TANTO, PARÉNTESIS!!
+        //document.write("Saldo actual: " + Maya.nuevosaldo()+"€"+"<br>");
+        document.write("El cliente ha ingresado: " + Maya.ingresar+"€"+"<br>");
+        document.write("El cliente ha retirado: " + Maya.retirar+"€"+"<br>");
+        document.write("Saldo actual: "+saldoactual+"€");
+
+
+        //nuevosaldo(){
+               // return Maya.depositar;
+              //  return Maya.extraer;
+           // }
+    </script>
+</body>
+</html>
+

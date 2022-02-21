@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo</title>
+</head>
+<body>
+    <script>
+        class Circulo {
+            constructor (radio) {
+            this.radio=radio;
+            }
+            area(){
+                return this.radio* this.radio * 3.14159;
+            }
+            diametro(){
+                return 2 * this.radio;
+            }
+            perimetro(){
+                return 2 * 3.14159 * this.radio;
+            }
+        }
+        let radio= prompt ("Radio del círculo: ");
+
+
+        const circulo1=new Circulo (radio);
+
+        // IMPRIMO ATRIBUTOS (no llevan paraéntesis)
+        document.write("El radio del circulo es: " + circulo1.radio+"<br>");
+
+
+        //TRABAJO CON MÉTODOS (AREA ES FUNCION, POR TANTO, PARÉNTESIS!!
+        document.write("El área del circulo es: " + circulo1.area()+"<br>");
+        document.write("El diámetro del circulo es: " + circulo1.diametro()+"<br>");
+        document.write("El perímetro del circulo es: " + circulo1.perimetro()+"<br>");
+    </script>
+</body>
+</html>

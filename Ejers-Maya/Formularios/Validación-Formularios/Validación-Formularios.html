@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_form.css">
+    <title>Ejercicio5</title>
+</head>
+<body>
+
+    <form onsubmit="return Verificar()">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre"><br>
+
+            <label for="Apellidos">Apellidos:</label>
+            <input type="text" id="Apellidos"><br>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email"><br>
+
+ 
+            <input type="radio" id="Mujer" name="radio" value="Mujer">
+            <label for="Mujer">Mujer</label><br>
+
+            <input type="radio" id="Hombre" name="radio" value="Hombre">
+            <label for="Hombre">Hombre</label><br>
+
+            <label for="comentario">Escribe aquí tu mensaje</label><br>
+            <textarea id="comentario" rows="3" cols="30">...mensaje aquí...</textarea><br>
+
+            <input type="checkbox" id="Checkbox">
+            <label for="Checkbox">Deseo recibir publicidad en mi email</label><br>
+
+            <label for="pais">Procedencia</label>
+            <select name="pais">
+                <option value="Elegir" id="AF">Elegir opción</option>
+                <option value="España" id="ES">España</option>
+                <option value="Francia" id="FR">Francia</option>
+            </select><br>
+
+            <label for="archivo">Adjuntar archivo:</label><br>
+            <input type="file" id="archivo"><br><br>
+
+            <input type="submit" value="Enviar datos">
+
+            <input id="check" type="button" value="Borrar datos">
+    </form>
+
+    <script>
+
+
+            function Verificar(){
+                
+                let nombre= document.getElementById('Nombre').value;
+                if (nombre.length == 0){
+                    alert("El campo Nombre está vacío");
+                    return false;
+                }
+
+                
+                let apellidos= document.getElementById('Apellidos').value;
+                if (apellidos.length == 0){
+                    alert("El campo Apellidos está vacío");
+                    return false;
+                }
+
+
+                let email= document.getElementById('Email').value;
+                if (email.length == 0){
+                    alert("El campo Email está vacío");
+                }
+                else{
+                    expresionRegularEmail = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+                    if (!expresionRegularEmail.test(email)){
+                        alert ("El email no es correcto");
+                        return false;
+                    }
+                }
+
+
+                let radio1= document.getElementsByName('radio');
+                let seleccionado = false;
+                for(var i=0; i<radio1.length; i++) {
+                    if(radio1[i].checked) {
+                        seleccionado = true;
+                        break; 
+                    }
+                }
+                if(!seleccionado) {
+                alert ("No has seleccionado tu sexo");
+                return false;
+                }
+
+        //Botón checkbox
+            var comentario1 = document.getElementById("comentario");
+                if (comentario1 == ""){
+                    alert("Debes insertar un mensaje");
+                    return false;
+                }
+            var Checkbox = document.getElementById("Checkbox");
+                if (!Checkbox.checked){
+                    alert("Acepte la publicidad.")
+                    return false;
+                }
+            var pais = document.getElementById("pais");
+                if (pais == null || pais == 0) {
+                    alert("Debes seleccionar tu pais")
+                    return false;
+                }
+            return true;
+
+            };
+
+    </script>
+</body>
+</html>

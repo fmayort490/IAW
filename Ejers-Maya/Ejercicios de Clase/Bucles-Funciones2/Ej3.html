@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej3</title>
+</head>
+<body>
+    <script>
+
+        // Escribir un programa que lea 10 notas de alumnos y 
+        // nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.
+
+        var contador=0;
+        var cant1=0;
+        var cant2=0;
+        alert("A continuación, ingrese 10 notas del 1 al 10: ");
+        
+        while (contador<10) {
+            var nota;
+            nota=prompt("Ingrese una nota: ");
+            
+            if (nota>=7){
+                cant1=cant1+1;
+            }
+            
+            else{
+                cant2=cant2+1;
+            }
+            contador=contador+1;
+        }
+
+        document.write('Notas Mayores o Iguales a 7:'+cant1);
+        document.write('<br>');
+        document.write('Notas Menores a 7:'+cant2);
+    </script>   
+</body>
+</html>

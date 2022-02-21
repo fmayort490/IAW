@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer6</title>
+</head>
+<body>
+    <script>
+        //  Realiza un programa que por medio de una función nos indique
+        // si el número que ingresa el usuario es primo o no.
+        
+        function primo (num1) {
+            let control; // ACORDARME DE EMILIO, DECLARO VARIABLE CONTROL PARA PODER MOSTRAR UN SOLO DOCU.WRITE
+            for (i=2;i<num1;i++){
+                if (num1 % i == 0) {     
+                    control = 1; 
+                }
+
+            }
+            if (control == 1) {
+                document.write("El número no es primo");
+            }
+            else{
+                document.write("El número es primo");
+            }
+        }
+
+        primo(7);
+    </script>
+</body>
+</html>

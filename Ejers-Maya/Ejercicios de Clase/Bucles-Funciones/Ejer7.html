@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer7</title>
+</head>
+<body>
+    <script>
+        // Realiza un programa que te de la opción de 
+        // elegir la operación matemática que quieres realizar por medio de funciones.
+
+        function suma (num1, num2) {
+        let resultado = num1 + num2;
+        document.write("El resultado es " + resultado)
+        }
+
+        function resta (num1, num2) {
+        let resultado = num1 - num2;
+        document.write("El resultado es " + resultado)
+        }
+
+        function mult (num1, num2) {
+        let resultado = num1 * num2;
+        document.write("El resultado es " + resultado)
+        }
+
+        function div (num1, num2) {
+        let resultado = num1 / num2;
+        let resto = num1 % num2;
+        document.write("El resultado es " + resultado + "<br>");
+        document.write("Resto = " + resto);
+        }
+
+
+        let opciones = Number(prompt("Elige la operación matemática: \n 1.Suma \n 2.Resta \n 3. Multiplicación \n 4.División"));
+        // el /n es como el br pero para los alert y prompt.
+
+        switch(opciones){
+            case 1:
+                suma(Number(prompt("Introduce el primer número: ")),Number(prompt("Introduce el segundo número: ")));
+                break;
+            case 2:
+                resta(Number(prompt("Introduce el primer número: ")), Number(prompt("Introduce el segundo número: ")));
+                break;
+            case 3:
+                mult(Number(prompt("Introduce el primer número: ")), Number(prompt("Introduce el segundo número: ")));
+                break;
+            case 4:
+                div(Number(prompt("Introduce el primer número: ")), Number(prompt("Introduce el segundo número: ")));
+                break;
+
+        }
+    </script>
+</body>
+</html>

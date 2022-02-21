@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej8</title>
+</head>
+<body>
+    <script>
+        // Desarrollar una función que retorne la cantidad de dígitos 
+        // que tiene una variable entera positiva de hasta 5 dígitos.
+
+        let variable = Number(prompt("Escribe un número: "));
+
+        function contar (){
+            if (variable.length <= 5){
+                document.write("El número tiene: " + variable.length + " cifras")
+            }
+            else {
+                document.write("Inserte un número de máximo 5 cifras");
+            }
+        }
+
+        contar();
+    </script>
+</body>
+</html>

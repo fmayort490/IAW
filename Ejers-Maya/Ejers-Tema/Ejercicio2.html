@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <script>
+        // Escribe un programa para crear una nueva cadena de caracteres añadiendo "Super" 
+        // al principio de una cadena que se le pide al usuario. 
+        // Si la cadena ya empieza por "Super", el resultado será la misma cadena original.
+
+        let cadena = String(prompt("Introduzca una cadena de caracteres:"));
+
+        if (cadena.substring(0,5) == "Super"){ // La comprobación va fuera del IF. 
+        
+            document.write (cadena); // La acción va dentro 
+        }
+
+        else {
+
+            document.write ("Super" + cadena)
+
+        }
+        
+    </script>
+</body>
+</html>

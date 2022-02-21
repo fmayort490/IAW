@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer5</title>
+</head>
+<body>
+    <script>
+        // Confecciona una función que se le pasen 3 enteros y los muestre ordenados de menor a mayor.
+
+
+            // CREAR FUNCIÓN PARA ESTE BUCLE
+          
+        
+        function orden(num1,num2,num3){
+            
+            if(num1 < num2 && num1 < num3){
+                if(num2<num3){
+                    document.write(num3 + " es mayor que " + num2 + " y mayor que " + num1);
+                }
+                else{
+                    document.write(num2 + " es mayor que " + num3 + " y mayor que " + num1);
+                }
+            }
+            else if(num2 < num1 && num2 < num3){
+                if(num1<num3){
+                    document.write(num3 + " es mayor que " + num1 + " y mayor que " + num2);
+                }
+                else{
+                    document.write(num1 + " es mayor que " + num3 + " y mayor que " + num2);
+                }
+            }
+            else{
+                if(num1<num2){
+                    document.write(num2 + " es mayor que " + num1 + " y mayor que " + num3);
+                }
+                else{
+                    document.write(num1 + " es mayor que " + num2 + " y mayor que " + num3);
+                }  
+            }
+        }
+
+         orden(1,2,3);
+
+
+    </script>   
+</body>
+</html>

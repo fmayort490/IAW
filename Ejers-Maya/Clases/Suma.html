@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma</title>
+</head>
+<body>
+    <script>
+        class Suma {
+            constructor (num1,num2) {
+            this.num1=num1;
+            this.num2=num2;
+            }
+            sumatorio(){
+                return this.num1 + this.num2;
+            }
+        }
+        let num1= Number(prompt ("Introduzca el primer número: "));
+        let num2= Number(prompt ("Introduzca el segundo número: "));
+
+        const suma1=new Suma (num1,num2);
+
+        // IMPRIMO ATRIBUTOS (no llevan paraéntesis)
+        document.write("El primer número es: " + suma1.num1+"<br>");
+        document.write("El segundo número es: " + suma1.num2+"<br>");
+
+        //TRABAJO CON MÉTODOS (AREA ES FUNCION, POR TANTO, PARÉNTESIS!!
+        document.write("El resultado de la suma es: " + suma1.sumatorio()+"<br>");
+    </script>
+</body>
+</html>

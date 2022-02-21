@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+
+        // DECLARO VARIABLES
+        let opcion = prompt("Dime como quieres que te salude: ");
+        // PRIMERA FORMA DE DECLARAR UNA FUNCIÓN
+        function saludo1 () {
+            alert ("Hola buenos días 1");
+        }
+
+        //saludo1();
+
+
+        // SEGUNDA FORMA DE DECLARAR UNA FUNCIÓN
+        function saludo2() {
+            return ("Hola buenos días 2");
+        }
+
+        //alert (saludo2());
+        
+
+        // TERCERA FORMA DE DECLARAR UNA FUNCIÓN
+        function saludo3 (cadena){
+            alert (cadena);
+        }
+
+        //saludo3(prompt("Dime como quieres que te salude:"));
+
+
+        // CON SWITCH PODEMOS ELEGIR QUE EL USUARIO DECIDA EL SALUDO
+        switch (opcion){
+            case "1":
+                saludo1();
+                break;
+
+            case "2":
+                alert(saludo2());
+                saludo2();
+                break;
+
+            case "3":
+                saludo3("Hola3");
+                break;
+
+            default:
+                saludo3("Saludo por defecto");
+                break;
+
+
+        }
+    </script>
+</body>
+</html>

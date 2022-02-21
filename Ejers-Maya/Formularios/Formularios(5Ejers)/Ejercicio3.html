@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <!-- Confeccionar un formulario que permita ingresar el nombre
+         y edad de una persona y luego lo muestre en un mensaje.-->
+    <form>
+            <label for="Nombre">Nombre:</label><br>
+            <input type="text" id="Nombre"><br>
+            <label for="Edad">Edad</label><br>
+            <input type="text" id="Edad"><br><br>
+        <input id="info" type="button" value="Mostrar Info" onclick="Info()">
+    </form>
+
+    <script>
+            function Info(){
+                
+                let nombre= document.getElementById('Nombre').value;
+                let edad= document.getElementById('Edad').value;
+                document.write("Nombre: " + nombre + "<br>");
+                document.write("Edad: " + edad);
+            }
+    </script>
+</body>
+</html>

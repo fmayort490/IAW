@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+</head>
+<body>
+    <!-- Codificar una página en la que aparezcan dos campos de texto tipo password. Cuando se presione un botón
+     mostrar si las dos claves ingresadas son iguales o no (es muy común solicitar al operador el ingreso de 
+     dos veces de su clave para validar si las escribió correctamente, esto se hace cuando se crea una password 
+     para el ingreso a un sitio o para el cambio de una existente) -->
+
+
+    <form>
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña"><br>
+            <label for="Repitacontraseña">Repita la contraseña:</label><br>
+            <input type="password" id="Repitacontraseña" name="Repitacontraseña"><br><br>
+        <input id="check" type="button" value="Verificar clave" onclick="Verificar()">
+    </form>
+
+    <script>
+
+
+            function Verificar(){
+                
+                let contr1= document.getElementById('contraseña').value;
+                let contr2= document.getElementById('Repitacontraseña').value;
+                alert(contr1);
+                alert(contr2);
+
+                if(contr1==contr2){
+                    alert("Las contraseñas coinciden");
+                }
+                else{
+                    alert("Las contraseñas no coinciden");
+                }
+
+            }
+
+    </script>
+</body>
+</html>

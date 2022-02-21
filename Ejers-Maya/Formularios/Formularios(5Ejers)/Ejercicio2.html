@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <!--Crear una página web en la que dispondremos un botón y cada vez que se presione, 
+    mostraremos un contador. (se mostrará el mensaje, el contador ahora vale 1, el contador vale 2, .....)-->
+
+
+<form>
+    <input id="boton" type="button" value="Pulsa aquí" onclick="click()">
+</form>
+<p id="contador1"></p> 
+
+<script type="text/javascript">
+
+    let boton1 =  document.getElementById('boton');
+    let P = document.getElementById('contador1'); // EN P MOSTRARÉ EL CONTADOR
+    let contador = 0;
+
+    boton1.onclick = function click(){
+        contador++;
+        P.textContent = "El contador vale " + contador;
+    }
+
+
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <script>
+        // Escribe un programa que devuelva la extensión del nombre de un fichero que se le pida al usuario.
+
+        let cadena = String(prompt("Introduzca una cadena de caracteres:"));
+        let posicion = Number(cadena.indexOf("."));
+        if (cadena.indexOf){ // La comprobación va fuera del IF. 
+            
+            document.write (cadena.substring(posicion)); // La acción va dentro 
+        }
+
+    </script>
+</body>
+</html>

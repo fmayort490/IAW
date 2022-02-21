@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcional7</title>
+</head>
+<body>
+    <script>
+        // Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+        let num1 = Number(prompt("Introduzca un número:"));
+        let num2 = Number(prompt("Introduzca un número:"));
+        let num3 = Number(prompt("Introduzca un número:"));
+
+        if (num1 > num2 && num1 > num3) {
+            document.write (num1);
+
+        }
+
+        else {
+            if (num2 > num1 && num2 > num3){
+            document.write (num2);
+
+            }
+
+            else {
+                if (num3 > num1 && num3 > num2){
+                document.write (num3);
+
+                }
+            }
+        }
+    </script>    
+</body>
+</html>

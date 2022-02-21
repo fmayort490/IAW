@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <!-- Codificar una página que permita ingresar una password y luego 
+        muestre una ventana de alerta si tiene menos de 5 caracteres.-->
+    <form>
+            <label for="Nombre">Nombre:</label><br>
+            <input type="text" id="Nombre"><br>
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña"><br>
+        <input id="info" type="button" value="Verificar clave" onclick="Verificar()">
+    </form>
+
+    <script>
+            function Verificar(){
+                
+                let nombre= document.getElementById('Nombre').value;
+                let password= document.getElementById('contraseña').value;
+
+                if (password.length < 5){
+                    alert("Tu contraseña contiene menos de 5 caracteres");
+                }
+                else {
+                    alert("¡GENIAL! Tu contraseña contiene 5 caracteres o más");
+                }
+            }
+    </script>
+</body>
+</html>

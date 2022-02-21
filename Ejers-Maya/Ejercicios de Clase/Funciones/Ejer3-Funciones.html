@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer3</title>
+</head>
+<body>
+    <script>
+        // PROGRAMA QUE MUESTRE SI UNA ES UN PALÍNDROMO
+       // DECLARO VARIABLES
+       let a = String(prompt("Introduzca una cadena:"));
+
+       function info (cadena) {
+        // Paso la cadena  sin espacios y en minúsculas
+        let nueva = cadena.replace(/\s+/g, "").toLowerCase().replace(',',"");
+        
+        // Lo separo en un array, lo invierto y devuelvo como string
+        let reversa = nueva.split("").reverse().join(""); 
+        
+        if (nueva == reversa) {
+            document.write("Es un palíndromo");
+        }
+        else {
+            document.write("No es un palíndromo");
+        }
+       }
+
+      info(a);
+   </script>   
+</body>
+</html>

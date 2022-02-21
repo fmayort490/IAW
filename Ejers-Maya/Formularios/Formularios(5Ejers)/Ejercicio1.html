@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+<!-- ESTO SIRVE PARA VER SO DE NUESTRO NAVEGADOR -->
+       <!-- <script type="text/javascript">
+            var SO = navigator.platform;
+            document.write("<h1>Documento abierto con: " + SO + "</h1>");
+</script>  -->
+
+
+
+
+<!-- ESTO SIRVE PARA ABRIR UNA NUEVA VENTANA, FALTA EL BOTÓN -->
+ <!--<label id="lbl_btn_ventana">Siguiente pagina</label>-->
+<input id="boton1" type="button" value="1" onclick="AbreVentana1()">
+<input id="boton2" type="button" value="2" onclick="AbreVentana2()">
+<input id="boton3" type="button" value="3" onclick="AbreVentana3()">
+
+<script type="text/javascript">
+
+    function AbreVentana1(){
+    var ventanaNueva1 = window.open();
+    ventanaNueva1.alert('Hola soy el botón 1');
+    }
+
+    function AbreVentana2(){
+    var ventanaNueva2 = window.open();
+    ventanaNueva2.alert('Hola soy el botón 2');
+    }
+
+    function AbreVentana3(){
+    var ventanaNueva3 = window.open();
+    ventanaNueva3.alert('Hola soy el botón 3');
+    }
+
+</script>
+    
+</body>
+</html>

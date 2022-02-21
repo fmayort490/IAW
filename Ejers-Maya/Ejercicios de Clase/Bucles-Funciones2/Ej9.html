@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej9</title>
+</head>
+<body>
+    <script>
+        // Elaborar una función que reciba tres enteros y retorne el promedio.
+
+        let suma = 0;
+        function promedio (){
+
+            for (i=1;i<=3;i++) {
+                let num;
+                num=Number(prompt("Inserta un número: "));
+                suma=suma+num;
+            }
+            let resultado= suma / 3;
+            document.write("El promedio de los 3 números es: " + resultado);
+        }   
+        promedio();
+    </script>
+</body>
+</html>
